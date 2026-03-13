@@ -3,7 +3,7 @@ Description=IBus Semi-Crash Monitor
 Wants=org.freedesktop.IBus.session.GNOME.service
 
 [Service]
-ExecStart=/home/ryoya/.local/share/ibusmonitor.sh
+ExecStart=%h/.local/bin/ibus-monitor.sh
 
 [Install]
 WantedBy=gnome-session.target
