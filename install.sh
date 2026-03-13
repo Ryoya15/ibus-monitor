@@ -33,4 +33,4 @@ else
     echo "$appname has been installed. ($unitscope mode)"
 fi
 
-[ "$unitscope" = "global" ] && echo "System mode cannot operate the current user's unit. Please restart the computer to complete the task."
+[ "$unitscope" = "global" ] && echo "Global mode cannot operate the current user's unit. Please restart the computer to complete the task."
