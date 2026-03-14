@@ -1,6 +1,6 @@
 [Unit]
 Description=IBus Semi-Crash Monitor
-Wants=org.freedesktop.IBus.session.GNOME.service
+After=org.freedesktop.IBus.session.GNOME.service
 
 [Service]
 ExecStart=%h/.local/bin/ibus-monitor.sh
