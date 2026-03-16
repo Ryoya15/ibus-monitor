@@ -44,14 +44,14 @@ wget -qO- https://github.com/Ryoya15/ibus-monitor/raw/refs/heads/main/install.sh
 wgetコマンドの `-qO-` から `q` を取り、 `-O-` に書き換えてから実行することで詳しい原因を特定できる可能性があります。
 
 
-### <span style="color:red">Failed to enable unit: Unit /path/to/systemd/user/ibus-monitor.service is masked</span>
+### Failed to enable unit: Unit /path/to/systemd/user/ibus-monitor.service is masked
 「インストール／アンインストールコマンドを実行しても何も表示されない」と同じ原因が疑われます。インストールコマンドの`.sh`と`|`の間に以下をつけて実行してみてください。詳しい原因を特定できる可能性があります。
 ```
  | sed "s/-qO/-O/g" 
 ```
 
 
-### <span style="color:red">--now cannot be used when systemd is not running or in conjunction with --root=/--global, refusing.</span>
+### --now cannot be used when systemd is not running or in conjunction with --root=/--global, refusing.
 全ユーザー向けにインストール／アンインストール（以下「グローバルインストール」と略す）した場合に表示されるのは正常です。
 
 systemdの制約上、rootとして実行されたスクリプトから現在のユーザーのユニットを制御することは（不可能ではないものの）困難なため、グローバルインストール後には一度コンピューターを再起動する必要があります。
