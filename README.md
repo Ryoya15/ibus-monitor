@@ -1,7 +1,7 @@
 # ibus-monitor
 *Please note that this tool is designed for Japanese users, and the documentation is available only in Japanese.*
 
-
+![IBusが入力モードを示さなくなり、直接入力と日本語入力の見分けがつきにくくなった状態](https://github.com/user-attachments/assets/5d00f2f7-2811-4828-ac9f-f5c48fb50e2c)
 
 GNOMEデスクトップで標準のIBus+Mozcで日本語入力を使用していると、アイコンが入力モードを示さなくなる不具合が発生することがあります。
 
