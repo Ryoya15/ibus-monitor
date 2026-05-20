@@ -4,6 +4,12 @@ After=org.freedesktop.IBus.session.GNOME.service
 
 [Service]
 ExecStart=%h/.local/bin/ibus-monitor.sh
+ProtectSystem=strict
+ProtectHome=read-only
+NoNewPrivileges=true
+ProtectControlGroups=true
+ProtectKernelTunables=true
+RestrictRealtime=true
 
 [Install]
 WantedBy=gnome-session.target
